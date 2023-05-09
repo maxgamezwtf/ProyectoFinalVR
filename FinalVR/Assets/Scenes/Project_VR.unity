@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &115454158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1094559010302358929, guid: 90fe8200ed13ec94da04414f2ecea48c, type: 3}
+  m_PrefabInstance: {fileID: 1741514157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &115454162
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115454158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4596239184023814631, guid: 90fe8200ed13ec94da04414f2ecea48c, type: 3}
 --- !u!1 &155388303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b62f855d9906ebe42893b994bb373e92, type: 3}
@@ -286,7 +305,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155388303}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: acb78fcb0450e4fb8b9fb4a2efa13fac, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4931,6 +4950,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09494478, y: 0.06983775, z: 0}
   m_Center: {x: 0.00013012569, y: 0.00018365702, z: 0.00013200921}
+--- !u!64 &1770585192
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770585187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1399593486537342773, guid: 90fe8200ed13ec94da04414f2ecea48c, type: 3}
 --- !u!1 &1818744293 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6531305803110666373, guid: 90fe8200ed13ec94da04414f2ecea48c, type: 3}
@@ -4949,6 +4982,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.003279429, y: 0.0016391865, z: 0.013100939}
   m_Center: {x: 0.04188727, y: -0.0014722921, z: 0.006653464}
+--- !u!1 &1824771046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7168674634058083190, guid: 90fe8200ed13ec94da04414f2ecea48c, type: 3}
+  m_PrefabInstance: {fileID: 1741514157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1824771050
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824771046}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8607521825572554488, guid: 90fe8200ed13ec94da04414f2ecea48c, type: 3}
 --- !u!1001 &1828108095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4982,7 +5034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b62f855d9906ebe42893b994bb373e92, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.2581887
+      value: 7.398
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b62f855d9906ebe42893b994bb373e92, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5423,7 +5475,15 @@ MonoBehaviour:
     m_Id: 02aabc08-f3d4-47a9-83a2-921200b91d68
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: cb1e79f9-c7c4-4af7-898f-13d7de322cf2
+      m_Path: <XRSimulatedController>{RightHand}/primaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
   OnPress:
     m_PersistentCalls:
@@ -5476,14 +5536,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675107511301736538}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.28925067, z: -0, w: 0.95725346}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1675107511217905850}
   m_Father: {fileID: 1675107512598430924}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -33.626, z: 0}
 --- !u!114 &1675107511301736517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5515,7 +5575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
-  m_XROrigin: {fileID: 0}
+  m_XROrigin: {fileID: 1675107511301736517}
 --- !u!114 &1675107511301736519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5903,11 +5963,19 @@ MonoBehaviour:
   action:
     m_Name: Action
     m_Type: 0
-    m_ExpectedControlType: 
+    m_ExpectedControlType: Button
     m_Id: f8556e4e-5a34-4e0c-9b19-3561ee5d1407
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 6b5fcb2e-9a2a-40b8-8773-0463bd62a8e6
+      m_Path: <XRController>{LeftHand}/primaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
     m_Flags: 0
   OnPress:
     m_PersistentCalls:
