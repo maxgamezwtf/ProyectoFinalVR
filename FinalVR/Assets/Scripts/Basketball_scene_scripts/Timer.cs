@@ -6,16 +6,18 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining;
+	public float startTime;
+    private float timeRemaining;
     public bool timerIsRunning = false;
     public TextMeshPro time_text;
     public Start_game start_game_script;
     public AudioSource[] allAudioSources;
     public AudioSource audio_end;
+    public GameObject UI_interfaceStart;
 
     void Start()
     {
-
+    	timeRemaining = startTime;
     }
 
     void StopAllAudio()
@@ -45,12 +47,16 @@ public class Timer : MonoBehaviour
                 timerIsRunning = false;
                 start_game_script.Hide_targets();
                 audio_end.Play();
+                start_game_script.SetGameNotRunnig();
+                UI_interfaceStart.SetActive(true);
+                StopTimer();
             }
         }
     }
 
     public void SetRunning()
     {
+    	timeRemaining = startTime;
         timerIsRunning = true;
     }
 
@@ -65,5 +71,9 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         time_text.text = "Time: " + string.Format("{1:00}",minutes, seconds);
+    }
+
+    public void restartTime(int newTime){
+        startTime = newTime;
     }
 }

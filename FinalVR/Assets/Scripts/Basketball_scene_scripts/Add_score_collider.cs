@@ -8,7 +8,9 @@ public class Add_score_collider : MonoBehaviour
     
     public enum score_target
     {
-        score1 = 1,
+        scoreEasy = 2,
+        scoreNormal = 1,
+        scoreHard = 1,
     };
 
     public score_target value_target;

@@ -10,7 +10,9 @@ public class Start_game : MonoBehaviour
     public AudioSource audio_boton_inicio;
     public GameObject elements;
     public GameObject UI_interfaceStart;
-    private bool is_game_running;
+    private bool is_game_running; 
+    public General_Script general_script_script;
+    public MoveHoodBasket primaryHoodBasketScript;
 
     void Start()
     {
@@ -22,22 +24,35 @@ public class Start_game : MonoBehaviour
     void Update()
     {
         //cuando de click a start en el menu mandar a llamar la funcion Go_game();
+        primaryHoodBasketScript.getGameConfiguration(is_game_running);
     }
 
     public void Go_game()
     {
         if(is_game_running == false)
         {
-            timer_script.SetRunning();
+            primaryHoodBasketScript.resetPositionsHood();
+            general_script_script.restartScore();
             audio_boton_inicio.Play();
-            elements.SetActive(true);
             UI_interfaceStart.SetActive(false);
-            is_game_running = true;
+            Invoke("DelayTime",3);
         }
+    }
+
+    public void DelayTime(){
+        timer_script.SetRunning();
+        elements.SetActive(true);
+        is_game_running = true;
     }
 
     public void Hide_targets()
     {
         elements.SetActive(false);
+    }
+
+    public void SetGameNotRunnig()
+    {
+        is_game_running = false;
+        primaryHoodBasketScript.resetPositionsHood();
     }
 }

@@ -27,4 +27,8 @@ public class General_Script : MonoBehaviour
         audio_goal.Play();
         Debug.Log("Score: " + score_total);
     }
+    public void restartScore(){
+        score_total = 0;
+        score_text.text = "Score: 0";
+    }
 }
