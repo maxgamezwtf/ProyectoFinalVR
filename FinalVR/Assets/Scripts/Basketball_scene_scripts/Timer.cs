@@ -45,7 +45,8 @@ public class Timer : MonoBehaviour
                 Debug.Log("Finaliza");
                 timeRemaining = 0;
                 timerIsRunning = false;
-                start_game_script.Hide_targets();
+                //start_game_script.Hide_targets();
+                DestroyObjects("balon");
                 audio_end.Play();
                 start_game_script.SetGameNotRunnig();
                 UI_interfaceStart.SetActive(true);
@@ -75,5 +76,12 @@ public class Timer : MonoBehaviour
 
     public void restartTime(int newTime){
         startTime = newTime;
+    }
+
+    public void DestroyObjects(string tag){
+    	GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(tag);
+    	foreach (GameObject target in gameObjects){
+    		GameObject.Destroy(target);
+    	}
     }
 }

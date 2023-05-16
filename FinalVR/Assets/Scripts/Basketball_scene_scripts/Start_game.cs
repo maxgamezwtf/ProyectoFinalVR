@@ -8,16 +8,17 @@ public class Start_game : MonoBehaviour
 {
     public Timer timer_script;
     public AudioSource audio_boton_inicio;
-    public GameObject elements;
+    //public GameObject elements;
     public GameObject UI_interfaceStart;
     private bool is_game_running; 
     public General_Script general_script_script;
     public MoveHoodBasket primaryHoodBasketScript;
+    public SpawnBalls BasketBallScript;
 
     void Start()
     {
         is_game_running = false;
-        Hide_targets();
+        //Hide_targets();
         //Go_game();
     }
 
@@ -40,15 +41,16 @@ public class Start_game : MonoBehaviour
     }
 
     public void DelayTime(){
-        timer_script.SetRunning();
-        elements.SetActive(true);
         is_game_running = true;
+        timer_script.SetRunning();
+        BasketBallScript.SpawnBasketBalls();
+        //elements.SetActive(true);
     }
-
+    /*
     public void Hide_targets()
     {
         elements.SetActive(false);
-    }
+    }*/
 
     public void SetGameNotRunnig()
     {
