@@ -26,6 +26,7 @@ public class Start_game : MonoBehaviour
     {
         //cuando de click a start en el menu mandar a llamar la funcion Go_game();
         primaryHoodBasketScript.getGameConfiguration(is_game_running);
+        BasketBallScript.getStateGame(is_game_running);
     }
 
     public void Go_game()
@@ -43,6 +44,7 @@ public class Start_game : MonoBehaviour
     public void DelayTime(){
         is_game_running = true;
         timer_script.SetRunning();
+        BasketBallScript.getStateGame(is_game_running);
         BasketBallScript.SpawnBasketBalls();
         //elements.SetActive(true);
     }
