@@ -85,5 +85,6 @@ public class Timer : MonoBehaviour
     	foreach (GameObject target in gameObjects){
     		GameObject.Destroy(target);
     	}
+        GameObject.Destroy(GameObject.FindWithTag("pelotas"));
     }
 }

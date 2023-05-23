@@ -1174,6 +1174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04cbc0994acbe8d48a99e2329ca9a8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer_script: {fileID: 1354089682}
+  audio_boton_inicio: {fileID: 862193927}
+  UI_interfaceStart: {fileID: 1782134237}
+  general_script_script: {fileID: 1616368498}
+  primaryHoodBasketScript: {fileID: 1284407426}
+  BasketBallScript: {fileID: 679902307}
 --- !u!4 &272750513
 Transform:
   m_ObjectHideFlags: 0
@@ -3694,6 +3700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3d1a3823ee44c4f99149c24fbe50d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balonBasketPrefab: {fileID: 3034158997458838994, guid: 19b99534b2bc0894c89dadbd60f19f29, type: 3}
 --- !u!1 &719406398
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,6 +4127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38aa23e36e106f94596879ec8c47a397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  general_Script: {fileID: 0}
+  value_target: 0
 --- !u!1 &802921515
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,6 +5265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a2313c6170b044bb3ae37684a0a8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualTarget: {fileID: 1757762819}
+  localAxis: {x: 0, y: 0, z: 0}
+  resetSpeed: 5
+  followAngleTreshold: 45
 --- !u!1 &1061816496
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,6 +6099,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409df7e0ea2f2bc4086b8d7ab66e97d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  leftBound: 0
+  rightBound: 0
+  isGameRunning: 0
 --- !u!4 &1284407427
 Transform:
   m_ObjectHideFlags: 0
@@ -6224,6 +6241,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cf35d63f8d571a43ad47fc099d119e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startTime: 30
+  timerIsRunning: 0
+  time_text: {fileID: 908908497}
+  start_game_script: {fileID: 272750512}
+  allAudioSources: []
+  audio_end: {fileID: 845873479}
+  audioAficcion: {fileID: 578145727}
+  UI_interfaceStart: {fileID: 1782134237}
 --- !u!1 &1404054109
 GameObject:
   m_ObjectHideFlags: 0
@@ -7105,6 +7130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7147927c63c9f3a41abd90112c0f5b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score_total: 0
+  score_text: {fileID: 625982450}
+  audio_goal: {fileID: 809131461}
 --- !u!4 &1616368499
 Transform:
   m_ObjectHideFlags: 0
@@ -8506,6 +8534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88743a49669a45a46a0f927a86a928b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeDifficulty: 3c000000190000000f000000
+  firstHoodBasketScript: {fileID: 1284407426}
+  timerScript: {fileID: 1354089682}
 --- !u!1 &1792054904
 GameObject:
   m_ObjectHideFlags: 0
@@ -8811,6 +8842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38aa23e36e106f94596879ec8c47a397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  general_Script: {fileID: 0}
+  value_target: 0
 --- !u!65 &1868489748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10356,6 +10389,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409df7e0ea2f2bc4086b8d7ab66e97d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  leftBound: 0
+  rightBound: 0
+  isGameRunning: 0
 --- !u!4 &2112899041
 Transform:
   m_ObjectHideFlags: 0
@@ -14279,6 +14316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409df7e0ea2f2bc4086b8d7ab66e97d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  leftBound: 0
+  rightBound: 0
+  isGameRunning: 0
 --- !u!1 &4623139513017291611
 GameObject:
   m_ObjectHideFlags: 0
