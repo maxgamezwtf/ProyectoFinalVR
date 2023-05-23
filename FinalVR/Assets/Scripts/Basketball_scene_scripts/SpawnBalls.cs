@@ -5,9 +5,9 @@ using UnityEngine;
 public class SpawnBalls : MonoBehaviour
 {
 	public GameObject balonBasketPrefab;
-	private float xSpawnPos=0.9f;
-	private float ySpawnPos=.01f;
-	private float zSpawnPos=0.9f;
+	private float xSpawnPos=3.28f;
+    private float ySpawnPos=1.44f;
+    private float zSpawnPos=5.92f;
     private bool isGameRunning = false;
 
     // Start is called before the first frame update

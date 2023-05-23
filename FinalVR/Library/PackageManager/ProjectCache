@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638192350209955719
-    m_Hash: 3461202181
+      ticks: 638200293820000000
+    m_Hash: 180190727
   m_LockFileStatus:
     m_FilePath: C:/Users/Emanuel/Documents/GitHub/ProyectoFinalVR/FinalVR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638192350210518876
-    m_Hash: 2475523189
+      ticks: 638200293820000000
+    m_Hash: 678160737
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -637,6 +637,7 @@ m_PackageAssets:
         - 1.3.2
         - 1.3.3
         - 1.3.4
+        - 1.3.5
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -648,6 +649,7 @@ m_PackageAssets:
         - 1.3.2
         - 1.3.3
         - 1.3.4
+        - 1.3.5
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12

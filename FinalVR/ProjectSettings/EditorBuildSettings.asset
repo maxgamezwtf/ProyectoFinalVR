@@ -12,4 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Bowling_VR.unity
     guid: 738c24cc774f42942a59d34328e08e8c
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8eb98870a8b2a7a48b3110e1b5cade4f, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ff390201c9dabd74a92c7fba643d5538, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 02df5a318464d4447a068822d30a6e2d, type: 2}

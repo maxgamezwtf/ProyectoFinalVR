@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     public Start_game start_game_script;
     public AudioSource[] allAudioSources;
     public AudioSource audio_end;
+    public AudioSource audioAficcion;
     public GameObject UI_interfaceStart;
 
     void Start()
@@ -26,6 +27,7 @@ public class Timer : MonoBehaviour
         foreach(AudioSource audioS in allAudioSources)
         {
             audioS.Stop();
+            audioAficcion.Play();
         }
     }
 
