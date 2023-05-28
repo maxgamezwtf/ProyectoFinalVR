@@ -73,7 +73,7 @@ public class Timer : MonoBehaviour
         timeToDisplay += 1;
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        time_text.text = "Time: " + string.Format("{1:00}",minutes, seconds);
+        time_text.text = ""+ string.Format("{00:00}:{1:00}",minutes, seconds);
     }
 
     public void restartTime(int newTime){

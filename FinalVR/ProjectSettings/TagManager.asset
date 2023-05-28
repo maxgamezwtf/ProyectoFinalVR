@@ -6,6 +6,8 @@ TagManager:
   tags:
   - balon
   - pelotas
+  - FxTemporaire
+  - canasta
   layers:
   - Default
   - TransparentFX

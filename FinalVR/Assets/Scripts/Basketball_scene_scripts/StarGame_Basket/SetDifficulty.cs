@@ -5,11 +5,11 @@ using UnityEngine;
 public class SetDifficulty : MonoBehaviour
 {
 	//easy[speed:0] - normal[speed:3] - Hard[speed:11] 
-	private int[ ] speed_difficultyType = {0,6,14}; 
+	private int[ ] speed_difficultyType = {0,2,6}; 
 	//easy[ 0>0 ] - normal[  -2.2 > 1.8 ] - Hard[ -4.4 > 4.2 ]
 	private float[ ] leftPositions = {0.0f,-2.2f,-4.4f};  
 	private float[ ] rightLimits = {0.0f,1.8f,4.2f}; 
-	public int[] timeDifficulty = {60,25,15};
+	public int[] timeDifficulty = {120,90,90};
 	public MoveHoodBasket firstHoodBasketScript;
 	public Timer timerScript;
 
