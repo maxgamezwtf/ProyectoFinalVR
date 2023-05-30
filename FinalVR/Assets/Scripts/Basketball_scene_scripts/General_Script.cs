@@ -9,10 +9,8 @@ public class General_Script : MonoBehaviour
     public TextMeshPro score_text;
     public AudioSource audio_goal;
     public GameObject objectCanasta;
-    public GameObject particle1;
-    public GameObject particle2;
-    public GameObject particle3;
-
+    public GameObject[] particles_Ring;
+    public GameObject particleConfetti;
 
     void Start()
     {
@@ -42,8 +40,9 @@ public class General_Script : MonoBehaviour
     }
 
     public void StartAnimations(){
-    	Instantiate(particle1, objectCanasta.transform.position, Quaternion.identity);
-    	Instantiate(particle2, objectCanasta.transform.position, Quaternion.identity);
-    	Instantiate(particle3, objectCanasta.transform.position, Quaternion.identity);
+        foreach (GameObject particle in particles_Ring){
+            Instantiate(particle, objectCanasta.transform.position, Quaternion.identity);
+        }
+        Instantiate(particleConfetti, new Vector3(-1.0f,4.92f,6.5f), Quaternion.identity);
     }
 }
