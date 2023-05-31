@@ -5,15 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MenuJuego.unity
     guid: b1ff3eb59ef3ebb44bebaea90fd569da
   - enabled: 1
     path: Assets/Scenes/Basketball_VR.unity
     guid: 10e4ea22363d87244b480b1f76ba399f
-  - enabled: 0
-    path: Assets/Scenes/Bowling_VR.unity
-    guid: 738c24cc774f42942a59d34328e08e8c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8eb98870a8b2a7a48b3110e1b5cade4f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ff390201c9dabd74a92c7fba643d5538, type: 2}
